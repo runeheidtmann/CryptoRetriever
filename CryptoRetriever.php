@@ -2,9 +2,11 @@
     /**
      * Automated script for retrieving historical cryptoprices.
      * 
-     * This application uses the "https://www.cryptocompare.com/" API for retrieving historical price-data.
+     * This application uses the "https://www.cryptocompare.com/" API for retrieving historical price-data. It solves the problem,
+     * that the API has a maxlimit set to 2000 pricepoints per query. This script does it a lot easier, if your want to get larger history-
+     * interval than that.
      * 
-     * Input any legal timeinterval and crypto-symbol, and CryptoRetriever will get it for you.
+     * Input any legal timeinterval and crypto-symbol, and CryptoRetriever will get it for you in a single run.
      * 
      * CryptoRetriever outputs in JSON
      *  
