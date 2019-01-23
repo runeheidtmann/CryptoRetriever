@@ -29,7 +29,7 @@
   
     <form class="inline-block" name="form1" method="POST" action="CryptoRetrieverView.php">
             <div class="row">
-                <div class="col-sm"><h1>Get daily, hourly and minute historical data, daily data at any given timeinterval. No limits, just good data!</h1></div>
+                <div class="col-sm"><h1>Get daily, hourly and minute historical data at any given timeinterval. No limits, just good data!</h1></div>
             </div><div class="row">
                 <div class="col-sm"><br><br><h6>The Cryptoretriever will get data in the specified time interval, at any intervalsize. Enter the date where you want data to begin. Result is from entered date to current date.
     </h6></div>
@@ -83,7 +83,7 @@
                 <option value="BCH">Bitcoin Cash</option>
                 <option value="TRX">TRON</option>
                 <option value="ADA">Cardano</option>
-                <option value="MIOTA">IOTOA</option>
+                <option value="IOT">IOTA</option>
                 <option value="XMR">Monero</option>
                 <option value="DASH">Dash</option>
                 </select>
@@ -95,6 +95,13 @@
        </form>
   </div>
     </div>
+    
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <h3>Data source: </h3>
+    <a href="http://cryptocompare.com"><img src="cryptocompare.png"></a>
+  </div>
+</footer>
 </main><!-- /.container -->
     
 </body>
