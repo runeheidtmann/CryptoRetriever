@@ -19,12 +19,15 @@
         private $symbol;
         private $intervalSize;
         private $limit;
+        
 
         public function __construct($startTime,$symbol,$intervalSize)
         {
             $this->startTime = $startTime;
             $this->timeFrom = $startTime+1;
             $this->symbol = $symbol;
+            
+
 
             switch($intervalSize){
                 case 'minute':
@@ -51,7 +54,7 @@
             $resultString = '';
             $innerString = '';
             $firstRun = TRUE;
-
+            
             //might take longer than 30 seconds to get respons. This will give you 300 seconds / 5 minutes:
             set_time_limit(300); 
 
@@ -74,7 +77,7 @@
                     $innerString .= $obj['Data'][$i]['close'];
                     
                     //JSON Array can't end with a comma. Så first run, no comma-output
-                    if($firstRun === TRUE)
+                    if($firstRun == TRUE && $i == count($obj['Data'])-1)
                         $innerString .= '}';
                     else 
                         $innerString .= '},';
@@ -101,7 +104,7 @@
             }
             
             // Wrap json in brackets so it will be recognized as an array
-            $resultString = '['.$resultString.']';
+            $resultString = '['.$resultString.']'.$counter;
             
             return $resultString;
         }
