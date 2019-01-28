@@ -1,5 +1,5 @@
 # CryptoRetriever
-Script that let you retrieve limitless pricehistory from CryptoCompare-API, although their API has a limit at 2000 pricepoints per query.
+Script that lets you retrieve limitless pricehistory from CryptoCompare-API, although their API has a limit at 2000 pricepoints per query.
 Just enter the date from where you want your date, and your good to go.
 
 # Installation
